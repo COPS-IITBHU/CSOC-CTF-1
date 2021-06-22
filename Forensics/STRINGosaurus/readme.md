@@ -1,5 +1,6 @@
 ### Forensics/STRINGosaurus
 ![Screenshot](dino.png)
+
 Stegosaurus is an underrated dinosaur
 
 Author: SolvedPack#1949
