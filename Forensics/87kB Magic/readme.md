@@ -1,5 +1,6 @@
 ### Forensics/87kB Magic
 ![Screenshot](plank.png)
+
 Corrupted files are such a headache..
 
 Author: SolvedPack#1949
