@@ -9,7 +9,6 @@ Author: SolvedPack#1949
 Using "pngcheck" on the png file gives "additional data after IEND chunk" which means there is some data appended to the png file. Now use "binwalk" which searches for file header and footer bytes (aka magic numbers) and outputs the list of files it found. The output it gives is:
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
---------------------------------------------------------------------------------
 0             0x0             PNG image, 850 x 500, 8-bit colormap, non-interlaced
 157           0x9D            Zlib compressed data, best compression
 87211         0x154AB         End of Zip archive
