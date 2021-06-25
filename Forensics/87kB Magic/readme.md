@@ -9,9 +9,13 @@ Author: SolvedPack#1949
 Using "pngcheck" on the png file gives "additional data after IEND chunk" which means there is some data appended to the png file. Now use "binwalk" which searches for file header and footer bytes (aka magic numbers) and outputs the list of files it found. The output it gives is:
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
+
 0             0x0             PNG image, 850 x 500, 8-bit colormap, non-interlaced
+
 157           0x9D            Zlib compressed data, best compression
+
 87211         0x154AB         End of Zip archive
+
 
 (Ignore the Zlib line as that is the part of the png image compression)
 This shows that it recognized the footer bytes of a zip file, which means there is a zip file appended to the png. Notice that the program didn't find the header bytes which means they are corrupted(or edited). 
